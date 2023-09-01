@@ -1,0 +1,897 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-family:sans-serif;
+	background-color: #dfeafd;
+}
+#nav{
+	width: 100%;
+	height: 70px;
+	background:#2874f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	color: white;
+	font-family:sans-serif;
+}
+#phoneLogo{
+	visibility: hidden;
+}
+#logo{
+	width: 13vw;
+	height: 70px;
+	background-color:transparent;
+	position:relative;
+	display: flex;
+	align-items:center;
+}
+
+#logo img{
+	width:8vw;
+	
+}
+#logo #img2{
+	width:5vw;
+}
+#search-box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width:30vw;
+	height: 5vh;
+	background-color: white;
+	box-shadow:  -2px -2px 6px #000;
+	
+}
+#search-box input{
+	width: 25vw;
+	height: 4vh;
+	border: none;
+	border-style: none;
+	margin-left: 7px;
+
+}
+#search-box img{
+	width: 2.1vw;
+	cursor: pointer;
+	margin-right: 7px;
+}
+#nav button{
+	height: 5vh;
+	width: 8vw;
+	color:#2874f0;
+	font-weight: bold;
+	border: none;
+
+}
+#more{
+	display: flex;
+	align-items:center;
+	color: white;
+}
+#more-img{
+	width: 1vw;
+	
+}
+#nav h4{
+	cursor: pointer;
+}
+#shoap{
+	visibility: hidden;
+}
+#search{
+	position: absolute;
+	top: 7.5%;
+	left: 28.6%;
+	background-color:white;
+	width: 30vw;
+	height: 40vh;
+	z-index: 100;
+	visibility:hidden;
+	color: black;
+	border-top: 1px solid black;
+}
+#search-icon{
+	display:flex;
+	padding:10px;
+	gap: 1vw;
+}
+#shoapinglist{
+	width: 100%;
+	height: 140px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-bottom: 0.1vw solid rgba(0, 0, 0, 0.2);
+}
+#shoapinglist >div{
+	width: 8vw;
+	height:15vh;
+	background-color: transparent;
+	text-align: center;
+	font-family: sans-serif;
+	visibility: visible;
+}
+#shoapinglist >div>img {
+	width: 6vw;
+	cursor: pointer;
+}
+#shoapinglist >div>p{
+	cursor: pointer;
+	font-size: 1vw;
+}
+#rotate{
+	width: 2vw;
+}
+
+ #rotate:hover{
+	transition: 0.3s;
+   transform: rotate(180deg);
+}
+#fasion-section{
+	position: absolute;
+	width: 40vw;
+	height: 70vh;
+	top: 30%;
+	left: 10%;
+	background-color:white;
+	display: flex;
+	cursor: pointer;
+	z-index: 200;
+	visibility: hidden;
+}
+#fasion-section #section1{
+	position: relative;
+	width: 20vw;
+	height: 70vh;
+	background-color: transparent;
+	border-right: 0.1vw solid rgba(0, 0, 0, 0.3);
+	box-shadow:0 0 3px #000;
+	padding: 5px;
+}
+#section1>div{
+	width: 20vw;
+	height: 7vh;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor:pointer;
+}
+#section1> div> i{
+	transform: rotate(-86deg);
+	visibility: hidden;
+}
+#fasion-product{
+	color: skyblue;
+}
+#section2{
+	position: relative;
+	width: 20vw;
+	height: 70vh;
+	background-color: transparent;
+	padding: 5px;
+
+}
+#section2>div{
+	width: 20vw;
+	height: 8vh;
+	background-color:transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+#nextpic{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+}
+
+#nextbutton{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 40px;
+	background-color:transparent;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	z-index: 1;
+
+}
+#image{
+	width:100%;
+	height: 100%;
+	z-index: 1;
+	object-fit: cover;
+	transition: 0.1s;
+	transform: scaleX(1.0);
+
+}
+
+#nextbutton button{
+	width: 2vw;
+	height: 9vh;
+	font-size: 2vw;
+	border: none;
+
+}
+#prev{
+	border-radius: 0 10px 10px 0;
+}
+#next{
+	border-radius: 10px 0 0 10px;
+}
+#electronicDvises{
+	width: 100%;
+	height: 50vh;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	gap: 2vw;
+
+
+}
+#ad_Viewall{
+	width: 17vw;
+	height: 47vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	}
+	#ad_Viewall button{
+		width: 7vw;
+		height: 6vh;
+		background-color: blue;
+		font-size: 1.2vw;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+
+	}
+#ad_Viewall img{
+	width: fit-content;
+}
+#electronic_products {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2vw;
+}
+#electronic_products > div{
+	width: 17vw;
+	flex: 0 0 auto;
+	height: 47vh;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2vh;
+
+}
+#electronic_products > div >img{
+	cursor: pointer;
+}
+#slider-container {
+  width: 60%;
+  height: 47vh;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#electronic_products > div >img:hover{
+	scale: 1.1;
+}
+#electronic_products > div>h5{
+	color: green;
+	font-size: 1.3vw;
+}
+#electronic_products > div>p{
+	color: rgba(0, 0, 0, 0.7);
+}
+#prevButton{
+	width: 3.5vw;
+	height: 14vh;
+	border: none;
+	position: absolute;
+	left: 19%;
+	font-size: 30px;
+	visibility: hidden;
+}
+#nextButton{
+	width: 3.5vw;
+	height: 14vh;
+	border: none;
+	position: absolute;
+	left: 75.7%;
+	font-size: 30px;
+}
+#prevButton,#nextButton:hover{
+	box-shadow: 2px 2px  5px;
+}
+
+#ad2{
+	width: 17vw;
+	height: 47vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color:palegreen;
+	background-image: url("https://rukminim2.flixcart.com/fk-p-flap/464/708/image/8e4e24029a20f235.jpg?q=70");
+	background-size: cover;
+	cursor: pointer;
+}
+
+/*second slider div countainer*/
+
+
+#foodtoys{
+	width: 100%;
+	height: 50vh;
+	background-color:white;
+	display: flex;
+	align-items: center;
+	gap: 2vw;
+	 margin-top: 49vh;
+
+}
+#seconddivAd{
+	width: 17vw;
+	height: 47vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	}
+#seconddivAd button{
+		width: 7vw;
+		height: 6vh;
+		background-color: blue;
+		font-size: 1.2vw;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+
+	}
+
+#seconddivAd img{
+	width: fit-content;
+}
+#foodtoy_products{
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2vw;
+}
+#foodtoy_products > div{
+	width: 17vw;
+	flex: 0 0 auto;
+	height: 47vh;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2vh;
+
+}
+#foodtoy_products > div >img{
+	cursor: pointer;
+}
+#slider2-container2 {
+  width: 75%;
+  height: 47vh;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#foodtoy_products > div >img:hover{
+	scale: 1.1;
+}
+#foodtoy_products > div>h5{
+	color: green;
+	font-size: 1.3vw;
+}
+#foodtoy_products > div>p{
+	color: rgba(0, 0, 0, 0.7);
+}
+#prevButton2{
+	width: 3.5vw;
+	height: 14vh;
+	border: none;
+	position: absolute;
+	left: 19%;
+	font-size: 30px;
+	visibility: hidden;
+}
+#nextButton2{
+	width: 3.5vw;
+	height: 14vh;
+	border: none;
+	position: absolute;
+	left: 95%;
+	font-size: 30px;
+}
+#prevButton2,#nextButton2:hover{
+	box-shadow: 2px 2px  5px;
+}
+
+/*slider div 3*/
+
+#HomeImprovement{
+	width: 100%;
+	height: 50vh;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	gap: 2vw;
+	 margin-top: 2vh;
+
+}
+#HomeAd{
+	width: 17vw;
+	height: 47vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	}
+#HomeAd button{
+		width: 7vw;
+		height: 6vh;
+		background-color: blue;
+		font-size: 1.2vw;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+
+	}
+
+#HomeAd img{
+	width: fit-content;
+}
+#HomeImprovement_products{
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2vw;
+}
+#HomeImprovement_products > div{
+	width: 17vw;
+	flex: 0 0 auto;
+	height: 47vh;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2vh;
+
+}
+#HomeImprovement_products > div >img{
+	cursor: pointer;
+}
+#slider3-container3 {
+  width: 75%;
+  height: 47vh;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#HomeImprovement_products > div >img:hover{
+	scale: 1.1;
+}
+#HomeImprovement_products > div>h5{
+	color: green;
+	font-size: 1.3vw;
+}
+#HomeImprovement_products > div>p{
+	color: rgba(0, 0, 0, 0.7);
+}
+#prevButton3{
+	width: 3.5vw;
+	height: 14vh;
+	border: none;
+	position: absolute;
+	left: 19%;
+	font-size: 30px;
+	visibility: hidden;
+}
+#nextButton3{
+	width: 3.5vw;
+	height: 14vh;
+	border: none;
+	position: absolute;
+	left: 95%;
+	font-size: 30px;
+}
+#prevButton3,#nextButton3:hover{
+	box-shadow: 2px 2px  5px;
+}
+
+#aboutsection{
+	width: 100%;
+	min-height: 100%;
+	background-color:transparent;
+
+}
+#aboutSectiondiv1{
+	width:100%;
+	min-height:50vh;
+    background-color:white;
+    padding:10px 0;
+}
+#aboutSectiondiv1 h4{
+	color: rgba(0, 0, 0, 0.6);
+}
+#aboutSectiondiv1 #heading{
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 14px;
+}
+#paragraph{
+	  margin-bottom: 1em;
+	  font-size: 12px;
+
+}
+
+#vertical-line {
+  display: inline-block;
+  border-left: 1px solid black;
+  height: 1em;
+  margin: 0 0.2em;
+  position: relative;
+  top: 0.1em;
+}
+#aboutSectiondiv2{
+	width: 100%;
+	min-height: 50vh;
+	background-color: white;
+	padding: 10px 0;
+}
+#heading2{
+	color: rgba(0, 0, 0, 0.7);
+	font-size:14px;
+}
+#paragraph2{
+	font-size: 11px;
+	color: rgba(0, 0, 0, 0.6);
+}
+#aboutSectiondiv3{
+	width: 100%;
+	min-height: 45vh;
+	background-color:#172337;
+	display: flex;
+	align-items: center;
+	justify-content:space-evenly;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+#aboutSectiondiv3 > div{
+	width: 180px;
+	height:260px;
+	background-color:transparent;
+
+}
+#section3heading{
+	font-size: 12px;
+	color: rgba(255, 255, 255,0.4);
+}
+#aboutSectiondiv3 > div > p{
+	font-size: 12px;
+	color: white;
+}
+#aboutSectiondiv3 >:nth-child(4){
+	border-right: 1px solid rgba(255, 255, 255,0.4);
+
+}
+#lastsection{
+	width: 100%;
+	height: 7vh;
+	background-color: #172337;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+	#nav{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#phoneLogo{
+		visibility:visible;
+		width:25vw;
+		color:white;
+		position: relative;
+		left: 15vw;
+
+	}
+	#logo img{
+		position: relative;
+			width: 17vw;
+			left: 17vw;
+	}
+	#search-box{
+		visibility: hidden;
+	}
+	
+	 #nav #login{
+	 	position: absolute;
+	 	height: 4vh;
+		width:20vw;
+		left: 50vw;
+
+	}
+	#nav h4{
+		visibility: hidden;
+	}
+	#shoap{
+		visibility: visible;
+		color: white;
+		position: absolute;
+		left: 15vw;
+	}
+	#shoapinglist{
+		display: flex;
+		align-items: center;
+		gap: 8vw;
+		overflow: hidden;
+		height: 16vh;
+	}
+	#shoapinglist #toys {
+		visibility: hidden;
+
+	}
+	#shoapinglist #twowheelers{
+        visibility: hidden;
+	}
+	#shoapinglist > div{
+		height: 10vh;
+	}
+	#shoapinglist > div > p{
+		font-size: 2vw;
+
+	}
+	#shoapinglist > div > img{
+		width:12vw;
+		
+	}
+	#nextpic{
+		top: 0%;
+		height: 20vh;
+	}
+	#nextbutton{
+		top: 35%;
+	}
+	#nextbutton button{
+		width: 6vw;
+		height: 7vh;
+		font-size: 4vw;
+	}
+
+/*silder div 1*/
+
+#electronicDvises{
+	height: 25vh;
+}
+#ad_Viewall h2{
+	font-size: 2vw;
+
+}
+#ad_Viewall button{
+	height: 3vh;
+	width: 10vw;
+	font-size: 2vw;
+}
+#slider-container{
+	height: 25vh;
+}
+#electronic_products > div{
+	height: 25vh;
+	width: 25vw;
+	gap: 1.5vw;
+}
+#electronic_products > div >img{
+	height: 10vh;
+	width: 20vw;
+}
+#electronic_products > div > h4{
+	font-size: 2vw;
+	text-align: center;
+}
+#electronic_products > div > h5{
+	font-size: 2vw;
+}
+#electronic_products > div > p{
+	font-size: 2vw;
+}
+#prevButton{
+	width: 6vw;
+	height: 10vh;
+}
+#nextButton{
+	width: 6vw;
+	height: 10vh;
+	left: 71%;
+}
+#ad2{
+	background-size: cover;
+	height: 25vh;
+	width: 25vw;
+}
+
+
+
+/*slider div 2*/
+
+
+#foodtoys{
+	height: 25vh;
+	margin-top: 25vh;
+}
+#seconddivAd h2{
+	font-size: 2vw;
+
+}
+#seconddivAd button{
+	height: 3vh;
+	width: 10vw;
+	font-size: 2vw;
+}
+#slider2-container2{
+	height: 25vh;
+}
+#foodtoy_products > div{
+	height: 25vh;
+	width: 25vw;
+	gap: 1.5vw;
+}
+#foodtoy_products > div >img{
+	height: 10vh;
+	width: 20vw;
+}
+#foodtoy_products > div > h4{
+	font-size: 2vw;
+	text-align: center;
+}
+#foodtoy_products > div > h5{
+	font-size: 2vw;
+}
+#foodtoy_products > div > p{
+	font-size: 2vw;
+}
+#prevButton2{
+	width: 6vw;
+	height: 10vh;
+}
+#nextButton2{
+	width: 6vw;
+	height: 10vh;
+	left: 95%;
+}
+
+/*slider div 3*/
+
+
+#HomeImprovement{
+	height: 25vh;
+	margin-top: 0vh;
+}
+#HomeAd h2{
+	font-size: 2vw;
+
+}
+#HomeAd button{
+	height: 3vh;
+	width: 10vw;
+	font-size: 2vw;
+}
+#slider3-container3{
+	height: 25vh;
+}
+#HomeImprovement_products > div{
+	height: 25vh;
+	width: 25vw;
+	gap: 1.5vw;
+}
+#HomeImprovement_products > div >img{
+	height: 10vh;
+	width: 20vw;
+}
+#HomeImprovement_products > div > h4{
+	font-size: 2vw;
+	text-align: center;
+}
+#HomeImprovement_products > div > h5{
+	font-size: 2vw;
+}
+#HomeImprovement_products > div > p{
+	font-size: 2vw;
+}
+#prevButton3{
+	width: 6vw;
+	height: 10vh;
+}
+#nextButton3{
+	width: 6vw;
+	height: 10vh;
+	left: 95%;
+}
+/*about section*/
+
+#aboutSectiondiv3{
+	flex-direction:column ;
+	
+}
+#aboutSectiondiv3 > div{
+	height: 300px;
+}
+#aboutSectiondiv3 >:nth-child(2){
+	height: 230px;
+}
+#aboutSectiondiv3 >:nth-child(4){
+	height: 160px;
+	border:none;
+}
+#aboutSectiondiv3 >:nth-child(5){
+	height: 200px;
+}
+#aboutSectiondiv3 >:nth-child(6){
+		
+}
+
+
+}
+
+
