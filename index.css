@@ -688,7 +688,7 @@ html,body{
 		align-items: center;
 		gap: 12vw;
 		overflow: hidden;
-		justify-content: center;
+		justify-content:space-evenly;
 		height: 16vh;
 	}
 	#shoapinglist #toys {
