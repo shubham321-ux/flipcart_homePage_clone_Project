@@ -686,8 +686,9 @@ html,body{
 		width:100%;
 		display: flex;
 		align-items: center;
-		gap: 8vw;
+		gap: 12vw;
 		overflow: hidden;
+		justify-content: center;
 		height: 16vh;
 	}
 	#shoapinglist #toys {
