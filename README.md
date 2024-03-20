@@ -7,11 +7,11 @@ Flipkart Home Page Demo
 
 This web page is a demonstration of a clone of the Flipkart home page, created using HTML, CSS, and JavaScript. It aims to replicate the design and functionality of the original Flipkart home page, including a slider and product links that redirect to the official Flipkart site.
 ## Some Images:
- <img width="450px;" src="https://github.com/shubham321-ux/E-commerce/blob/main/ecommerce%201.png?raw=true"/>
-<img width="450px;" src="https://github.com/shubham321-ux/E-commerce/blob/main/ecommerce%202.png?raw=truee"/>
-<img width="450px;" src="https://github.com/shubham321-ux/E-commerce/blob/main/ecommerce%203.png?raw=true"/>
-<img width="450px;" src="https://github.com/shubham321-ux/E-commerce/blob/main/ecommerce%204.png?raw=true"/>
-<img width="450px;" src="https://github.com/shubham321-ux/E-commerce/blob/main/ecommerce%205.png?raw=true"/>
+ <img width="450px;" src="https://github.com/shubham321-ux/flipcart_homePage_clone_Project/blob/main/flipcart%201.png?raw=true"/>
+<img width="450px;" src="https://github.com/shubham321-ux/flipcart_homePage_clone_Project/blob/main/flipcart%202.png?raw=true"/>
+<img width="450px;" src="https://github.com/shubham321-ux/flipcart_homePage_clone_Project/blob/main/flipcart%203.png?raw=true"/>
+<img width="450px;" src="https://github.com/shubham321-ux/flipcart_homePage_clone_Project/blob/main/flipcart%204.png?raw=true"/>
+
 
 ## Features:
 
